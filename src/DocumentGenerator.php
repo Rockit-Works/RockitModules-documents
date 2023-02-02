@@ -26,7 +26,7 @@ class DocumentGenerator extends Pdf {
             ]
         ];
 
-        $docs_config = config('documents');
+        $docs_config = config('document');
 
         $this->options = [
             'enable_modelEntry' => $docs_config['enable_modelEntry'],
@@ -103,8 +103,6 @@ class DocumentGenerator extends Pdf {
      */
     public function createPDF()
     {
-        dd($this->view, $this->view_data);
-
         // $view_data = $this->getViewData();
         $name = \Str::slug($this->file_name).'.pdf';
 

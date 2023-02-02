@@ -20,20 +20,15 @@ use Illuminate\Support\Facades\Auth;
  });
 
 
-Route::get('/rw_document_test', function () {
+Route::get('/rw_document_test', function ()
 
-    dd('derp');
-
-    $rockitDocument = \RockitDocument::init();
-
-
-
-    return \RockitDocument::init()->createPDF();
-//        ->setViewData([
-//            'person' => [
-//                'first_name' => 'Sjoerd'
-//            ]
-//        ])
+    return \RockitDocument::init()
+        ->setViewData([
+            'person' => [
+                'first_name' => 'Sjoerd'
+            ]
+        ])
+        ->createPDF();
 
 
 });
