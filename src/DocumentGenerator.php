@@ -105,7 +105,7 @@ class DocumentGenerator extends Pdf {
     {
         // $view_data = $this->getViewData();
         $name = \Str::slug($this->file_name).'.pdf';
-
+        dd($this->view, $this->view_data);
         $pdf = PDF::loadView($this->view, $this->view_data);
         $pdf->setPaper('A4', 'portrait');
 
