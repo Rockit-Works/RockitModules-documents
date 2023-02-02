@@ -19,11 +19,15 @@ class ServiceProvider extends BaseServiceProvider {
 	 */
 	public function register()
     {
-
+œ
         // Register a class in the service container
         $this->app->bind('rockitworks.invoice', function ($app) {
             return new InvoiceGenerator();
         });
+
+//        $this->app->bind('rockitworks.document', function ($app) {
+//            return new DocumentGenerator();
+//        });
 
         $this->mergeConfigFrom(__DIR__ . '/../config/invoice.php', 'invoice');
     }
@@ -32,9 +36,9 @@ class ServiceProvider extends BaseServiceProvider {
     {
         $this->publishes([
         	__DIR__ . '/../config/invoice.php' => config_path('invoice.php'),
-        	__DIR__ . '/../resources/views' => resource_path('views/vendor/rockitworks/invoice'),
+        	__DIR__ . '/../resources/views' => resource_path('views/vendor/rockitworks/documents'),
         ]);
-
+tg
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadViewsFrom( __DIR__ . '/resources/views', 'rockitworks-invoice');
