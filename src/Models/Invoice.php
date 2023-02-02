@@ -10,3 +10,4 @@ class Invoice extends Model {
 	  protected $guarded = ['id'];
 
 	  protected $tableName = 'rw_invoices';
+}
