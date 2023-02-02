@@ -38,7 +38,7 @@ class ServiceProvider extends BaseServiceProvider {
         	__DIR__ . '/../config/invoice.php' => config_path('invoice.php'),
         	__DIR__ . '/../resources/views' => resource_path('views/vendor/rockitworks/documents'),
         ]);
-tg
+
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadViewsFrom( __DIR__ . '/resources/views', 'rockitworks-invoice');
