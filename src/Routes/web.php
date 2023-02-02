@@ -21,12 +21,12 @@ use Illuminate\Support\Facades\Auth;
 
 
 Route::get('/rw_document_test', function () {
-    return \RockitDocument::init()
-        ->setViewData([
-            'person' => [
-                'first_name' => 'Sjoerd'
-            ]
-        ])
-        ->createPDF();
+    return \RockitDocument::init()->createPDF();
+//        ->setViewData([
+//            'person' => [
+//                'first_name' => 'Sjoerd'
+//            ]
+//        ])
+
 
 });
