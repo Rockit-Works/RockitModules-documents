@@ -22,7 +22,7 @@ class InvoiceConfirmationMail extends Mailable
     public function build()
     {
         return $this->from(config('mail.from.address'))
-            ->markdown('rockitworks-invoice::emails.confirmationMail', [
+            ->markdown('rockitworks-documents::emails.confirmationMail', [
                 'url' => $invoice->file_path ?? 'www.rockit.works'
             ]);
     }

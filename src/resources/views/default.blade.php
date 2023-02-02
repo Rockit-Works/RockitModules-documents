@@ -33,12 +33,12 @@
 <section>
 	{{-- Sender --}}
 	<div style="display: inline-block; width: 49.5%">
-		@include('rockitworks-invoice::components.sender')
+		@include('rockitworks-documents::components.sender')
 	</div>
 
 	{{-- Receiver --}}
 	<div style="display: inline-block; width: 49.5%">
-		@include('rockitworks-invoice::components.receiver')
+		@include('rockitworks-documents::components.receiver')
 	</div>
 </section>
 
@@ -48,7 +48,7 @@
 <section>
 	<h1>Factuur</h1>
 	<div style="width: 33%">
-		@include('rockitworks-invoice::components.info')
+		@include('rockitworks-documents::components.info')
 	</div>
 </section>
 
@@ -56,19 +56,19 @@
 
 {{-- PRODUCTEN --}}
 <section>
-	@include('rockitworks-invoice::components.products')
+	@include('rockitworks-documents::components.products')
 </section>
 
 <br><hr><br>
 
 {{-- TOTALS --}}
 <section>
-	@include('rockitworks-invoice::components.totals')
+	@include('rockitworks-documents::components.totals')
 </section>
 
 <br><br>
 
 {{-- BOTTOM TEXT --}}
 <section>
-	@include('rockitworks-invoice::components.bottomText')
+	@include('rockitworks-documents::components.bottomText')
 </section>

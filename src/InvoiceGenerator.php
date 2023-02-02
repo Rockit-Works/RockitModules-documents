@@ -21,7 +21,7 @@ class InvoiceGenerator extends Pdf {
      */
     public function __construct()
     {
-        $this->view = 'rockitworks-invoice::default';
+        $this->view = 'rockitworks-documents::default';
         $this->view_data = [
             'sender' => config('invoice.sender_details'),
             'receiver' => config('invoice.receiver_details'),

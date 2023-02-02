@@ -22,7 +22,7 @@ class InvoiceAdminMail extends Mailable
     public function build()
     {
         return $this->from(config('mail.from.address'))
-            ->markdown('rockitworks-invoice::emails.adminMail', [
+            ->markdown('rockitworks-documents::emails.adminMail', [
                 'url' => $invoice->file_path ?? ''
             ]);
     }
