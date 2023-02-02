@@ -21,6 +21,7 @@ return [
     ],    
 
 	'sender_details' => [
+        'logo' => 'https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image-300x300.png.webp',
         'email' => 'sjoerd@rockit.works',
         'name' => 'Sjoerd van Bergen',
         'address' => 'Flight Forum 3509',
