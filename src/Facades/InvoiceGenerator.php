@@ -8,6 +8,6 @@ class InvoiceGenerator extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'rockitworks.documents';
+        return 'rockitworks.invoice';
     }
 }

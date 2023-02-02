@@ -3,7 +3,7 @@
 namespace Rockitworks\Documents;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
-use Rockitworks\Invoice\InvoiceGenerator;
+use Rockitworks\Documents\InvoiceGenerator;
 
 class ServiceProvider extends BaseServiceProvider {
 
