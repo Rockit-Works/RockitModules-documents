@@ -22,9 +22,11 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/rw_document_test', function () {
 
+    dd('derp');
+
     $rockitDocument = \RockitDocument::init();
 
-    dd($rockitDocument);
+
 
     return \RockitDocument::init()->createPDF();
 //        ->setViewData([
