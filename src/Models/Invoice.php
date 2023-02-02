@@ -9,5 +9,5 @@ class Invoice extends Model {
 	// Disable Laravel's mass assignment protection
 	  protected $guarded = ['id'];
 
-	  protected $tableName = 'rw_invoices';
+	  protected $table = 'rw_invoices';
 }
