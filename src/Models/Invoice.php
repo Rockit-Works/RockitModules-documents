@@ -1,6 +1,6 @@
 <?php 
 
-namespace Rockitworks\Invoice\Models;
+namespace Rockitworks\Documents\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Rockitworks\Invoice\Facades;
+namespace Rockitworks\Documents\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

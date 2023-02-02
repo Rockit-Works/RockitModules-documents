@@ -1,7 +1,7 @@
 {
-    "name": "rockitworks/invoice",
-    "description": "Invoice generator",
-    "keywords": ["invoice","rockit works"],
+    "name": "rockitworks/documents",
+    "description": "Document generator",
+    "keywords": ["invoice","documents","rockit works"],
     "license": "MIT",
     "authors": [
         {
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Rockitworks\\Invoice\\": "src/"
+            "Rockitworks\\Documents\\": "src/"
         }
     },
     "autoload-dev": {
@@ -27,10 +27,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rockitworks\\Invoice\\ServiceProvider"
+                "Rockitworks\\Documents\\ServiceProvider"
             ],
             "aliases": {
-                "RockitInvoice": "Rockitworks\\Invoice\\Facades\\InvoiceGenerator"
+                "RockitInvoice": "Rockitworks\\Documents\\Facades\\InvoiceGenerator"
             }
         }
     },

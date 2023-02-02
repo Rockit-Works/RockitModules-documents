@@ -1,13 +1,13 @@
 <?php 
 
-namespace Rockitworks\Invoice;
+namespace Rockitworks\Documents;
 
 use Illuminate\Database\Eloquent\Model;
 use Barryvdh\Snappy\Facades\SnappyPdf as PDF;
 
-use Rockitworks\Invoice\Models\Invoice as InvoiceModel;
-use Rockitworks\Invoice\Mail\InvoiceConfirmationMail;
-use Rockitworks\Invoice\Mail\InvoiceAdminMail;
+use Rockitworks\Documents\Models\Invoice as InvoiceModel;
+use Rockitworks\Documents\Mail\InvoiceConfirmationMail;
+use Rockitworks\Documents\Mail\InvoiceAdminMail;
 
 class InvoiceGenerator extends Pdf {
 

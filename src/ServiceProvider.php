@@ -1,6 +1,6 @@
 <?php 
 
-namespace Rockitworks\Invoice;
+namespace Rockitworks\Documents;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Rockitworks\Invoice\InvoiceGenerator;
