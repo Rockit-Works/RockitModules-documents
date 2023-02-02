@@ -37,7 +37,7 @@ class ServiceProvider extends BaseServiceProvider {
         $this->publishes([
         	__DIR__ . '/../config/invoice.php' => config_path('invoice.php'),
             __DIR__ . '/../config/document.php' => config_path('document.php'),
-        	__DIR__ . '/../resources/views' => resource_path('views/vendor/rockitworks/documents'),
+        	__DIR__ . '/resources/views' => resource_path('views/vendor/rockitworks/documents'),
         ]);
 
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
