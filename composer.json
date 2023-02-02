@@ -30,7 +30,8 @@
                 "Rockitworks\\Documents\\ServiceProvider"
             ],
             "aliases": {
-                "RockitInvoice": "Rockitworks\\Documents\\Facades\\InvoiceGenerator"
+                "RockitInvoice": "Rockitworks\\Documents\\Facades\\InvoiceGenerator",
+                "RockitDocument": "Rockitworks\\Documents\\Facades\\DocumentGenerator"
             }
         }
     },
