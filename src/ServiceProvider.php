@@ -19,7 +19,6 @@ class ServiceProvider extends BaseServiceProvider {
 	 */
 	public function register()
     {
-œ
         // Register a class in the service container
         $this->app->bind('rockitworks.invoice', function ($app) {
             return new InvoiceGenerator();
