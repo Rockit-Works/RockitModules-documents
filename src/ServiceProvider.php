@@ -29,14 +29,14 @@ class ServiceProvider extends BaseServiceProvider {
 //        });
 
         $this->mergeConfigFrom(__DIR__ . '/../config/invoice.php', 'invoice');
-        $this->mergeConfigFrom(__DIR__ . '/../config/document.php', 'document');
+//        $this->mergeConfigFrom(__DIR__ . '/../config/document.php', 'document');
     }
 
     public function boot()
     {
         $this->publishes([
         	__DIR__ . '/../config/invoice.php' => config_path('invoice.php'),
-            __DIR__ . '/../config/document.php' => config_path('document.php'),
+//            __DIR__ . '/../config/document.php' => config_path('document.php'),
         	__DIR__ . '/../resources/views' => resource_path('views/vendor/rockitworks/documents'),
         ]);
 
