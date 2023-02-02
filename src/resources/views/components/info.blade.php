@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<td>Factuurnummer:</td>
+		<td>{{$invoice['series']}}{{$invoice['number']}}</td>
+	</tr>
+	<tr>
+		<td>Factuurdatum:</td>
+		<td>{{$invoice['invoice_date']->format('d-m-Y')}}</td>
+	</tr>
+	<tr>
+		<td>Vervaldatum:</td>
+		<td>{{$invoice['invoice_date']->addDays($invoice['pay_within_days'])->format('d-m-Y')}}</td>
+	</tr>
+</table>

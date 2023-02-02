@@ -1,0 +1,39 @@
+{
+    "name": "rockitworks/invoice",
+    "description": "Invoice generator",
+    "keywords": ["invoice","rockit works"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sjoerd van Bergen",
+            "email": "sjoerd@rockit.works"
+        }
+    ],
+    "require": {
+        "barryvdh/laravel-snappy": "^0.4.8"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Rockitworks\\Invoice\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rockitworks\\Invoice\\ServiceProvider"
+            ],
+            "aliases": {
+                "RockitInvoice": "Rockitworks\\Invoice\\Facades\\InvoiceGenerator"
+            }
+        }
+    },
+    "scripts": {
+    }
+}
