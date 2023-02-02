@@ -20,7 +20,10 @@ use Illuminate\Support\Facades\Auth;
  });
 
 
-Route::get('/rw_document_test', function () {
+Route::get('/rw_document_test', function ()
+
+    $rockitDocument = \RockitDocument::init();
+    dd($rockitDocument);
     return \RockitDocument::init()->createPDF();
 //        ->setViewData([
 //            'person' => [
