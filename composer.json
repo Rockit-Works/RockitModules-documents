@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "barryvdh/laravel-snappy": "^0.4.8"
+        "barryvdh/laravel-snappy": "dev-master"
     },
     "require-dev": {
 
