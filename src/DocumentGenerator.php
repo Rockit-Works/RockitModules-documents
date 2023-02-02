@@ -19,8 +19,9 @@ class DocumentGenerator extends Pdf {
      */
     public function __construct()
     {
-        $this->view = 'rockitworks-documents::example';
+        $this->view = 'rockitworks-documents::documents.empty';
         $this->view_data = [
+            'content' => 'test document',
             'person' => [
                 'first_name' => 'Sjoerd'
             ]
