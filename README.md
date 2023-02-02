@@ -15,18 +15,18 @@
 ```
 $invoice = \RockitInvoice::init()
     ->setSenderDetails([
-        'email' => 'sjoerd@rockit.works',
+        'email' => 'admin@rockit.works',
         'logo' => 'https://assets.laracasts.com/images/logo.svg',
-        'name' => 'Sjoerd van Bergen',
-        'address' => 'Straat 28',
+        'name' => 'Rockit Works',
+        'address' => 'Flight Forum 3509',
         'postal' => '5657DW',
         'city' => 'Eindhoven',
         'bank_account_name' => 'Rockit Works B.V.',
-        'bank_account_number' => 'NL12BUNQ01245678',
+        'bank_account_number' => 'NL12BUNQ012345678',
 
     ])
     ->setReceiverDetails([
-        'email' => 'sjoerd@rockit.works',
+        'email' => 'admin@rockit.works',
         'name' => 'Rockit Works',
         'address' => 'Flight Forum 3509',
         'postal' => '5657DW',
