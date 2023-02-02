@@ -24,9 +24,9 @@ class ServiceProvider extends BaseServiceProvider {
             return new InvoiceGenerator();
         });
 
-//        $this->app->bind('rockitworks.document', function ($app) {
-//            return new DocumentGenerator();
-//        });
+        $this->app->bind('rockitworks.document', function ($app) {
+            return new DocumentGenerator();
+        });
 
         $this->mergeConfigFrom(__DIR__ . '/../config/invoice.php', 'invoice');
 //        $this->mergeConfigFrom(__DIR__ . '/../config/document.php', 'document');
