@@ -2,7 +2,7 @@
 
 
 - publish all files
-'php artisan vendor:publish'
+'php artisan vendor:publish --provider="Rockitworks\Documents\ServiceProvider'
 
 - edit config
 '/config/invoice'
