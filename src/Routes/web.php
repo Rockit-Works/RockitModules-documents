@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Auth;
  });
 
 
-Route::get('/rw_document_test', function ()
+Route::get('/rw_document_test', function () {
 
     return \RockitDocument::init()
         ->setViewData([
